@@ -2,9 +2,10 @@ import { TextField, Button } from "@mui/material";
 import { Box } from "@mui/system";
 import React, { useState } from "react";
 import { LoadingButton } from "@mui/lab";
+import { useNavigate } from "react-router-dom";
 import Link from 'next/link'
 
-const Login = () => {
+const index = () => {
 //   const [usernameErrText, setUsernameErrText] = useState("");
 //   const [passwordErrText, setPasswordErrText] = useState("");
 //   const [isLoading,setIsLoading] = useState(false)
@@ -59,13 +60,12 @@ const Login = () => {
         color="primary"
         variant="outlined"
       >
-       ログイン
+       新規登録
       </LoadingButton>
     </Box>
-      <Link href="/signup">アカウントを持っていませんか？新規登録</Link>
-      
-    </>
+      <Link href="/login">既にアカウントをお持ちですか？ログイン</Link>
+      </>
   );
 };
 
-export default Login;
+export default index;

@@ -2,8 +2,9 @@ import { Button } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import "../styles/book.module.css";
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
-const Book = ({ imgUrl, title, author }) => {
+const Book = ({ imgUrl, title, author,id }) => {
   const enoughTitle = title.length < 10
   const enoughAuthor = author.length < 10
   const shortenTitle = title.substr(0,9);
@@ -12,10 +13,9 @@ const Book = ({ imgUrl, title, author }) => {
     <Box className="book_wrapper">
       <img src={imgUrl} className="book" />
       <p className="book-title">{`${shortenTitle}${enoughTitle?"":"..."}`}</p>
-      <p className="book-author">{`By ${shortenAuthor}${enoughAuthor?"":"..."}`}</p>
-      <button variant="lent" className="book-rent_button">
-        Lent
-      </button>
+      <p className="book-author">{` ${shortenAuthor}${enoughAuthor?"":"..."}`}</p>
+      <p className="book-isbn">{id}</p>
+      <FavoriteBorderIcon className="book-favorite"/>
     </Box>
   );
 };

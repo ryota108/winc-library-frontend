@@ -18,7 +18,7 @@ const image = (props) => {
 
   useEffect(()=>{
     fetchBooks()
-  },[])
+  },[props.keyword])
 
   console.log(books)
 

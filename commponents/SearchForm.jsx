@@ -1,22 +1,15 @@
 import { Avatar } from '@mui/material'
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
+import { useRouter } from 'next/router';
 
 const SearchForm = () => {
   const ref = useRef();
+  const router = useRouter();
 
   const submitHundler = (e) => {
     e.preventDefault();
     console.log(ref.current.value);
-    const searchURL = "";
-
-    //fetch data
-    fetch(searchURL)
-      .then((res) => {
-        return res.json();
-      })
-      .then((bookData) => {
-        setFetchData(bookData);
-      });
+    router.push({ pathname: "/result", query: {keyword:ref.current.value} }, "result"); 
   };
 
   return (

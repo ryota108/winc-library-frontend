@@ -1,6 +1,5 @@
 import { Avatar } from '@mui/material'
-import React from 'react'
-import { useRef } from 'react'
+import React, { useRef } from 'react'
 
 const SearchForm = () => {
   const ref = useRef();

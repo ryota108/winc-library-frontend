@@ -1,7 +1,6 @@
 import { Avatar } from '@mui/material'
 import React, { useRef } from 'react'
 
-
 const SearchForm = () => {
   const ref = useRef();
 
@@ -27,7 +26,7 @@ const SearchForm = () => {
       <form onSubmit={submitHundler}>
         <input type="text" className='search_input' placeholder='Search books...' ref={ref}/>
       </form>
-      </div>
+    </div>
   )
 }
 

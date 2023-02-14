@@ -1,8 +1,7 @@
-import { TextField, Button, Typography, IconButton, InputAdornment } from "@mui/material";
+import { TextField, Button, Typography, IconButton, Link } from "@mui/material";
 import { Box } from "@mui/system";
 import React, { useState } from "react";
 import { LoadingButton } from "@mui/lab";
-import Link from 'next/link'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 
@@ -58,9 +57,7 @@ const Login = () => {
         InputProps={{
           endAdornment: (
             <IconButton aria-label="visibility">
-              <InputAdornment position="end">
-                  <VisibilityIcon sx={{fontSize:"20px", color:"#d3c5a8"}}/>
-              </InputAdornment>
+              <VisibilityIcon sx={{fontSize:"20px", color:"#d3c5a8"}}/>
             </IconButton>
               
           ),
@@ -89,6 +86,7 @@ const Login = () => {
       <Link 
       href="/signup"
       className="login-signup-text"
+      underline="none"
     >
       アカウントを持っていませんか？新規登録
     </Link>

@@ -122,11 +122,13 @@ height: 200px;
 
 .login-signup-button {
   border-radius: 5px;
+  border: none;
 }
 
 .login-signup-text {
   color: #9c9c9c;
   font-size: 10px;
-  margin: 5px 0 50px 150px;
-
+  margin-top: 5px;
+  margin-left: 50px;
+  margin-bottom: 30px;
 }

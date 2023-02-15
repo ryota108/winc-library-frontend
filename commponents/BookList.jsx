@@ -3,11 +3,11 @@ import Book from "./Book";
 import { useEffect } from 'react'
 import { useState } from 'react'
 
-const image = (props) => {
+const image = ({keyword = "TypeScript"}) => {
   const [books,setBooks] = useState([])
 
-  const baseURL = `https://app.rakuten.co.jp/services/api/BooksTotal/Search/20170404?applicationId=${process.env.secretKey}&keyword=`
-  const bookParams = props.keyword
+  const baseURL = `https://app.rakuten.co.jp/services/api/BooksTotal/Search/20170404?applicationId=${process.env.NEXT_PUBLIC_SECRETKEY}&keyword=`
+  const bookParams = keyword 
   const URL = encodeURI(baseURL+bookParams)
   const fetchBooks = async () => {
     const res = await fetch(URL);
@@ -18,7 +18,7 @@ const image = (props) => {
 
   useEffect(()=>{
     fetchBooks()
-  },[props.keyword])
+  },[keyword])
 
   console.log(books)
 

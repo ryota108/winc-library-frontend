@@ -6,7 +6,7 @@ import { useState } from 'react'
 const image = ({keyword = "TypeScript"}) => {
   const [books,setBooks] = useState([])
 
-  const baseURL = `https://app.rakuten.co.jp/services/api/BooksTotal/Search/20170404?applicationId=1056086428413921423&keyword=`
+  const baseURL = `https://app.rakuten.co.jp/services/api/BooksTotal/Search/20170404?applicationId=${process.env.NEXT_PUBLIC_SECRETKEY}&keyword=`
   const bookParams = keyword 
   const URL = encodeURI(baseURL+bookParams)
   const fetchBooks = async () => {

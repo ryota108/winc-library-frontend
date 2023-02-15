@@ -5,6 +5,7 @@ import BookList from "../../commponents/BookList.jsx"
 import SearchForm from "../../commponents/SearchForm"
 import { useRouter } from "next/router";
 import TabNavigation from "../../commponents/TabNavigation.jsx"
+import SimpleBottomNavigation from "../../commponents/BottomNavigation.jsx"
 
 export default function Home() {
   const [books,setBooks] = useState([])
@@ -18,6 +19,7 @@ export default function Home() {
       <SearchForm/>
       <TabNavigation/>
       <BookList keyword={router.query.keyword}/>
+      <SimpleBottomNavigation/>
     </Box>
   )
 }

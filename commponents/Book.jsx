@@ -15,7 +15,7 @@ const Book = ({ imgUrl, title, author }) => {
       <p className={`book-title ${enoughTitle ? "long":""}`}>{`${shortenTitle}${title.length>28 ?"...":""}`}</p>
       <p className="book-author">{`${shortenAuthor}${enoughAuthor?"":"..."}`}</p>
 
-      <IconButton>
+      <IconButton className="book-favorite_button">
         <FavoriteBorderIcon sx={{fontSize:"15px"}}/>
       </ IconButton>
     </Box>

@@ -14,10 +14,7 @@ const Book = ({ imgUrl, title, author }) => {
       <img src={imgUrl} className="book" />
       <p className={`book-title ${enoughTitle ? "long":""}`}>{`${shortenTitle}${title.length>28 ?"...":""}`}</p>
       <p className="book-author">{`${shortenAuthor}${enoughAuthor?"":"..."}`}</p>
-
-      <IconButton>
-        <FavoriteBorderIcon sx={{fontSize:"15px"}}/>
-      </ IconButton>
+        <FavoriteBorderIcon sx={{fontSize:"15px"}} className="book_like"/>
     </Box>
   );
 };

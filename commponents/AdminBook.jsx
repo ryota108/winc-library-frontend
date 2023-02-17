@@ -20,7 +20,6 @@ const AdminBook = ({imgUrl = "https://thumbnail.image.rakuten.co.jp/@0_mall/book
     </div>
     </div>
   </Box>
-//   貸出中　期限超過　
   )
 }
 

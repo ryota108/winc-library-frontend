@@ -25,6 +25,7 @@ const BorrowedBookList = ({keyword = "TypeScript"}) => {
 
   return (
     <>
+      <p>借りている本(3), リクエストした本</p>
       <ul className="bookList_wrapper">
       {borrowedBooks?.map((borrowedBook)=>(<BorrowedBook imgUrl={borrowedBook?.Item.mediumImageUrl} title={borrowedBook?.Item.title} author={borrowedBook?.Item.author}/>))}
       </ul>

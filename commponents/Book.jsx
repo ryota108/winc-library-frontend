@@ -5,10 +5,10 @@ import "../styles/book.module.css";
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 const Book = ({ imgUrl, title, author }) => {
-  const enoughTitle = title.length > 10
-  const enoughAuthor = author.length < 10
-  const shortenTitle = title.substr(0,27);
-  const shortenAuthor = author.substr(0,11);
+  const enoughTitle = title?.length > 10
+  const enoughAuthor = author?.length < 10
+  const shortenTitle = title?.substr(0,27);
+  const shortenAuthor = author?.substr(0,11);
   return (
     <Box className="book_wrapper">
       <img src={imgUrl} className="book" />

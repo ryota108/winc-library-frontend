@@ -4,7 +4,6 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import SimpleBottomNavigation from '../../commponents/BottomNavigation';
 
 const index = () => {
-
   return (
     <>
      <ArrowBackIcon size='30px' className='arrowBack'/>

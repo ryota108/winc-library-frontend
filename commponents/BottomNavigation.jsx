@@ -21,7 +21,7 @@ export default function SimpleBottomNavigation() {
         className="bottomNavigation"
       >
         <BottomNavigationAction LinkComponent={Link} href="/"   icon={<HomeIcon  />} />
-        <BottomNavigationAction  icon={<FavoriteBorderIcon  />} />
+        <BottomNavigationAction LinkComponent={Link} href="/favorite" icon={<FavoriteBorderIcon  />} />
         <BottomNavigationAction LinkComponent={Link} href="/mypage" icon={<MenuBookIcon />} />
       </BottomNavigation>
     </Box>

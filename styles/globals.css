@@ -249,7 +249,7 @@ a {
 .book_like {
   position: relative;
   left: 83%;
-  bottom: 5%;
+  bottom: 10% !important;
   color: #9c9c9c;
 }
 

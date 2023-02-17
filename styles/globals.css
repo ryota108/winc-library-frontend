@@ -365,9 +365,11 @@ a {
 .detail_description {
   width: 80%;
   font-family: serif;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0 auto;
   margin-top: 30px;
+  font-size: 0.8rem;
+  letter-spacing: -1px;
 }
 
 .detail_info_wrapper {

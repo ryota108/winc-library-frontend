@@ -7,6 +7,7 @@ import Box from "@mui/material/Box";
 import Book from "../../commponents/Book";
 import SimpleBottomNavigation from "../../commponents/BottomNavigation";
 import RentalBook from "../../commponents/RentalBook";
+import RequestBook from "../../commponents/RequestBook";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -63,7 +64,7 @@ export default function BasicTabs() {
             className="mypage-tab"
           />
           <Tab
-            label="リクエストしている本"
+            label="リクエストした本"
             {...a11yProps(1)}
             className="mypage-tab"
           />
@@ -90,11 +91,10 @@ export default function BasicTabs() {
         />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <Book
-          imgUrl="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6353/9784297126353_1_2.jpg?_ex=120x120"
+        <RequestBook imgUrl="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6353/9784297126353_1_2.jpg?_ex=120x120"
           title="Web API:The Good Parts"
           author="山田太郎"
-        />
+          requestDate="2022/10/23"/>
       </TabPanel>
       <SimpleBottomNavigation />
     </Box>

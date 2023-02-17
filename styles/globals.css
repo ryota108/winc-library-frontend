@@ -25,11 +25,16 @@ a {
   position: relative;
   width: 130px;
   height: 210px;
-  margin-right:10%;
+  margin-right: 10%;
   border-radius: 10px;
-  background-color: #F6EFE3;
+  background-color: #f6efe3;
   margin-bottom: 15px;
-  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.0196802), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0282725), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.035), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.0417275), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0503198), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.0196802),
+    0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0282725),
+    0px 22.3363px 17.869px rgba(0, 0, 0, 0.035),
+    0px 12.5216px 10.0172px rgba(0, 0, 0, 0.0417275),
+    0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0503198),
+    0px 2.76726px 2.21381px rgba(0, 0, 0, 0.07);
 }
 
 .book {
@@ -58,77 +63,76 @@ a {
   height: 3.6em;
   overflow: hidden;
   line-height: 1.8;
-  
 }
 
 .search_wrapper {
-height: 200px;  
+  height: 200px;
 }
 
 .user_avatar {
-  position:absolute;
+  position: absolute;
   top: 8%;
   left: 80%;
 }
 
 .search_input {
- background-color: #EEEEEE;
- border: none;
- width: 90%;
- height: 50px;
- border-radius: 15px;
- margin-top: 8rem;
- margin-left: 5%;
- outline: none;
- color: #CBCBCB;
- text-align: center;
+  background-color: #eeeeee;
+  border: none;
+  width: 90%;
+  height: 50px;
+  border-radius: 15px;
+  margin-top: 8rem;
+  margin-left: 5%;
+  outline: none;
+  color: #cbcbcb;
+  text-align: center;
 }
 ::placeholder {
   position: relative;
   left: 15px;
   text-align: left;
-  color: #CBCBCB;
+  color: #cbcbcb;
 }
 
 .book-author {
   height: 15px;
   font-size: 0.3rem;
   color: #636262;
-   position: relative;
-   bottom: 10px;
-   left: 12px;
-   letter-spacing: -0.75px;
+  position: relative;
+  bottom: 10px;
+  left: 12px;
+  letter-spacing: -0.75px;
 }
 
 .book-rent_button {
-  background-color:#2F2F2F;
-  color:white;
+  background-color: #2f2f2f;
+  color: white;
   border: none;
   font-family: serif;
   padding: 5px 10px;
   border-radius: 5px;
-  font-size:0.4rem;
-  position:relative;
-  top:-15px;
-  left:60%;
+  font-size: 0.4rem;
+  position: relative;
+  top: -15px;
+  left: 60%;
   margin-top: 5px;
 }
 
 .categoryTab {
   margin-left: 5%;
   margin-top: 5px;
-  border: 1px solid #D3C5A8 !important;
+  border: 1px solid #d3c5a8 !important;
 }
 
 .categoryTab.selected {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   color: gray;
-  border: 1px solid #D3C5A8 !important;
+  border: 1px solid #d3c5a8 !important;
   opacity: 0.6;
 }
 
 .logo {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 2.5rem;
   position: absolute;
   top: 4%;
@@ -154,10 +158,85 @@ height: 200px;
 }
 
 .book-favorite_button {
-  position:absolute;
+  position: absolute;
   padding: 10px 10px;
   border-radius: 5px;
-  bottom:5px;
-  left:70%;
+  bottom: 5px;
+  left: 70%;
+}
 
+.admin_book {
+  min-width: 60px;
+  min-height: 50px;
+  border-radius: 20px;
+  height: 60px;
+  object-fit: cover;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.adminBook_wrapper {
+  display: flex;
+  width: 45%;
+  height: 75px;
+  margin-left: 2%;
+  margin:10px 0px ;
+  margin-right: 3%;
+  border-radius: 10px;
+  background-color: #f3efe1;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07),
+    0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198),
+    0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275),
+    0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035),
+    0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725),
+    0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+}
+
+.adminBook_title {
+  font-size: 10px;
+  transform: scale(0.8);
+  width: 120px;
+  margin-left: -10px;
+  margin-top: 15px;
+}
+
+.adminBook_author {
+  font-size: 10px;
+  transform: scale(0.9);
+  opacity: 0.5;
+  margin-top: -10px;
+  margin-left: -3px;
+}
+
+.adminBook_review_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 15px;
+  margin-top: -5px;
+}
+
+.adminBook_reviewIcon {
+  color: #BE9F53;
+  font-size: 15px!important;
+}
+
+.adminBook_review {
+  font-size: 10px;
+}
+
+.adminPage_title {
+  font-family: serif;
+  color: gray;
+  font-size: 1.3rem;
+  margin-top: 12%;
+  margin-left: 5%;
+  font-weight: 300;
+}
+
+.arrowBack {
+  color: #9c9c9c;
+  position: absolute;
+  top: 20px;
+  left: 5%;
 }

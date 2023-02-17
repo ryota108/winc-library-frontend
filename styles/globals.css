@@ -86,8 +86,8 @@ a {
   width: 90%;
   height: 50px;
   border-radius: 15px;
-  margin-top: 8rem;
-  margin-left: 5%;
+  margin-top: 34% !important;
+  margin-left: 5% !important;
   outline: none;
   color: #cbcbcb;
   text-align: center;
@@ -124,7 +124,7 @@ a {
 }
 
 .categoryTab {
-  margin-left: 5%;
+  margin-left: 5% !important;
   margin-top: 5px;
   border: 1px solid #d3c5a8 !important;
 }
@@ -260,8 +260,7 @@ background-color: #FBF8F2;
 }
 
 .mypage-tab {
-  margin-top: 12%;
-  margin: 12% auto;
+  margin: 12% auto !important;
 }
 
 .rental_info_wrapper {

@@ -1,5 +1,5 @@
-import { Avatar, IconButton, TextField } from '@mui/material'
-import React, { useRef, useState } from 'react'
+import { TextField } from '@mui/material'
+import React, { useRef} from 'react'
 import { useRouter } from 'next/router';
 import SearchIcon from '@mui/icons-material/Search';
 
@@ -15,8 +15,7 @@ const SearchForm = () => {
 
   return (
     <div className='search_wrapper'>
-     <h1 className='logo'>WINC Library</h1>
-      <Avatar className='user_avatar'/>
+     <h1 className='logo'>Pocket Library</h1>
       <form onSubmit={submitHundler}>
         <TextField 
           InputProps={{

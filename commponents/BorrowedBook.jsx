@@ -1,4 +1,4 @@
-import { Box } from "@mui/system";
+import { Box, width } from "@mui/system";
 import React from "react";
 import Book from "./Book";
 

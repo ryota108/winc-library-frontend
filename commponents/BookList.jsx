@@ -26,7 +26,7 @@ const image = ({keyword = "TypeScript"}) => {
   return (
     <>
       <ul className="bookList_wrapper">
-      {books?.map((book)=>(<Book imgUrl={book?.Item.mediumImageUrl} title={book?.Item.title} author={book?.Item.author} key={book?.Item.isbn}/>))}
+      {books?.map((book)=>(<Book imgUrl={book?.Item.mediumImageUrl} title={book?.Item.title} author={book?.Item.author} id={book?.Item.isbn} key={book?.Item.isbn}/>))}
       </ul>
     </>
   );

@@ -18,7 +18,7 @@ export default function SimpleBottomNavigation() {
         onChange={(event, newValue) => {
           setValue(newValue);
         }}
-        
+        className="bottomNavigation"
       >
         <BottomNavigationAction LinkComponent={Link} href="/"   icon={<HomeIcon  />} />
         <BottomNavigationAction  icon={<FavoriteBorderIcon  />} />

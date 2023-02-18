@@ -5,7 +5,7 @@ import "../styles/book.module.css";
 import Link from "next/link";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
-const Book = ({ imgUrl, title, author,id }) => {
+const Book = ({ imgUrl, title, author,id = 9784297127473 }) => {
   const enoughTitle = title?.length > 10;
   const enoughAuthor = author?.length < 10;
   const shortenTitle = title?.substr(0, 27);

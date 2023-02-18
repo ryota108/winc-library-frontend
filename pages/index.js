@@ -4,6 +4,7 @@ import { Autocomplete, TextField } from "@mui/material"
 import BookList from "../commponents/BookList"
 import SearchForm from "../commponents/SearchForm"
 import { useRouter } from "next/router";
+import Router from 'next/router'
 import TabNavigation from "../commponents/TabNavigation.jsx"
 import SimpleBottomNavigation from "../commponents/BottomNavigation"
 import { useRecoilState } from "recoil";
@@ -15,7 +16,7 @@ export default function Home() {
 
   useEffect(()=>{
    if(typeof user.isLogin === "undefined"){
-    router.push("/login")
+    Router.push("/login")
    }
   },[])
   return (

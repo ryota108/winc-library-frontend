@@ -5,13 +5,13 @@ import { LoadingButton } from "@mui/lab";
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import { useRecoilState } from "recoil";
 import { userState } from "../../store/atom";
-import { useRouter } from 'next/router'
+import Router from "next/router";
 
 const index = () => {
   const [user, setUser] = useRecoilState(userState);
   const [userName,setUserName] = useState("")
   const [email,setEmail] = useState("")
-  const router = useRouter()
+
 
   
   const userNameHandler = (e) => {
@@ -23,7 +23,7 @@ const index = () => {
  
   const submitHandler = () =>{
     setUser({userName:userName,emailAddress:email,isLogin:true})
-    router.push("/")
+    Router.push("/")
   }
 
   return (

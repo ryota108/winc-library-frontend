@@ -16,7 +16,7 @@ export default function Home() {
 
   useEffect(()=>{
    if(typeof user.isLogin === "undefined"){
-    // Router.push("/login")
+    Router.push("/login")
    }
   },[])
   return (

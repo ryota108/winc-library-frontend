@@ -6,13 +6,17 @@ import SearchForm from "../commponents/SearchForm"
 import { useRouter } from "next/router";
 import TabNavigation from "../commponents/TabNavigation.jsx"
 import SimpleBottomNavigation from "../commponents/BottomNavigation"
+import { useRecoilState } from "recoil";
+import { userState } from "../store/atom";
 
 export default function Home() {
-  const [books,setBooks] = useState([])
   const router = useRouter();
+  const [user,setUser] = useRecoilState(userState)
 
   useEffect(()=>{
-// fetch系
+   if(typeof user.isLogin === "undefined"){
+    router.push("/login")
+   }
   },[])
   return (
     <Box >

@@ -20,7 +20,6 @@ const Book = ({ imgUrl, title, author,id = 9784297127473 }) => {
         <p className="book-author">{`${shortenAuthor}${
           enoughAuthor ? "" : "..."
         }`}</p>
-        <FavoriteBorderIcon sx={{ fontSize: "15px" }} className="book_like" />
     </Link>
       </Box>
   );

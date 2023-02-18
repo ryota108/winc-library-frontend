@@ -23,7 +23,7 @@ const index = () => {
  
   const submitHandler = () =>{
     setUser({userName:userName,emailAddress:email,isLogin:true})
-    Router.push("/")
+    // Router.push("/")
   }
 
   return (
